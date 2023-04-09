@@ -1,0 +1,29 @@
+# Basic Number Operators
+
+#Addition
+1+1
+
+# Division
+7/4
+
+# Modulo - Remainder after division
+50 % 5 # (Find even number = Remainder 0)
+23 % 2 # (Find odd number = Remainder not 0)
+
+# Exponent 2^3
+2**3
+
+# Order of Operations
+(2+10)*(10+3)
+
+# Exercise - Expression = 100
+# Given Example
+(100/2) * 3 - 75 + 25
+
+# New Example
+(25*10)/10 * (5-1)
+
+# FORMAT METHOD with Float
+result = 100/777
+result
+print("The result was")

@@ -1,0 +1,25 @@
+# Variable Rules
+# No start with number, no special characters, lowercase
+
+# Dynamic Typing - Easy to use, could result in bugs (Use type() to be sure of data types)
+
+a = 5
+a
+a = 10
+a + a
+
+# Keep running again (cell environment), it'll run again
+a = a + a
+a
+
+# Understand Type of variable and resassign type
+type(a) # Should be int
+a = 30.1
+type(a) # Should be float
+
+# Using Names in Variables
+
+my_income = 100
+tax_rate = 0.1
+my_taxes = my_income * tax_rate
+my_taxes
