@@ -1,0 +1,14 @@
+# Working with Files
+
+# Open a file
+
+# Two Possible Errors
+import pwd
+
+
+myfile = open() # Must pass file name
+
+# Missing directory declaration
+myfile = open('wrong.txt') # Wrong File Path
+myfile = open('myfile.txt')
+pwd

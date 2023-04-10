@@ -1,0 +1,24 @@
+# Tuples
+# Immutable unlike Lists
+# Format (1,2,3) - Paranthesis unlike List
+
+# Tuple 
+t = (1,2,3) 
+# List
+mylist = [1,2,3]
+
+# Check Type
+type(t) # tuple
+type(mylist) # list
+
+t = ('one',2)
+t[0] # Call first value in tuple
+t[-1] # Call last item in tuple
+
+# Methods of Tuples
+t = ('a','b','a')
+t.count('a') # Count # of times 'a' occurs
+t.index('b') # First occurance location of 'a'
+
+t[0] = 'NEW' # Error since text cannot be replace - Immutable
+

@@ -1,0 +1,118 @@
+# Strings
+# Use single or double quotes
+
+# Characters are in order sequence
+# Can use indexing and slicing
+# White Spaces count as character
+
+'hello there'
+"hello there"
+"We're going out" # Using double quotes since string includes '
+
+from operator import concat
+from tkinter import N
+
+print("hello") # Used to show all text in case Python only shows latest string
+
+# ESCAPE CHARACTERS
+print("hello \nworld") # "\n" used as new line
+print("hello \tworld") # "\t" used as tab (4 spaces)
+
+# Check Length of String
+len('hello world')
+
+# INDEXING
+# Character  H E L L O
+# Index      0 1 2 3 4
+# Rev. Index 0 -4 -3 -2 -1 (find last character)
+
+mystring = "Hello World"
+mystring
+
+mystring[0] # Return first character
+mystring[8] # 9th Character - Return 'r' in 'World'
+mystring[-3] # Return 4th character from last character
+mystring[-1] # Last character of string
+
+# SLICING
+# [start:stop:step]
+# Default Step Size (interval) is 1
+
+mystring = 'abcdefghijk'
+mystring[2:] # Colon - Before colon - All the way to end
+
+mystring[:3] # Colon - After colon - Up to but not including
+
+mystring[3:6] # Start at 4th and stop at 7th character
+
+mystring[::] # Characters from beginning to end
+
+# STEP SIZES (INTERVALS)
+mystring[::3] # Step size of 3
+mystring[2:7:2]
+mystring[::-1] # Reverse String
+
+# IMMUTABILITY (Cannot Change)
+# String does not support item assignment
+
+# Change Miraj to Minaj
+name = "Miraj"
+first_letters = name[0:2]
+last_letters = name[3:]
+replace_letter = "n"
+new_name = first_letters + replace_letter + last_letters
+print(new_name)
+
+# CONCATENATION
+phrase = "Hi " + new_name + "! " + "How are you today?"
+print(phrase)
+
+# Multiplying Strings
+letter = "r"
+letter * 10 # Repeat R 10 times
+
+'2' + '3' # Be careful Dynamic Typing - Combining strings
+
+# METHODS (Built-In Methods or Functions)
+x = "Hello World"
+
+# Uppercase, Lowercase
+x.upper() # Need to include () to execute
+x.lower()
+
+# Create List out of Strings
+x.split() # Delimiter - Split strings based on white space or letter indicated
+x.split('o') # Removes character splitting on
+
+# STRING FORMATTING (w/ PRINTING)
+# String Interpolation (Add string into strings)
+
+# .format() METHOD
+print('This is a string {}'.format('INSERTED'))
+print('The {} {} {}'.format('fox','brown','quick')) # Format follows given order
+
+# Add new strings at specific positions (indexes in Format array)
+print('The {2} {1} {0}'.format('fox','brown','quick'))
+
+# Using variable names instead of index position
+print('The {q} {b} {f}'.format(f='fox',b='brown',q='quick')) 
+
+# With Float (precision value)
+result = 1000/77
+result
+print("The result was {r}".format(r=result))
+# After decimal point = Precision # of digits after decimal
+# Before decimal point = Precision # of digits before decimal.
+print("The result was {r:1.5f}".format(r=result))
+
+# f-strings METHOD (Don't need to use concat)
+name = "Miraj"
+print(f'Hello, my name is {name}')
+
+# Using multiple variables in f-string
+name = "Miraj"
+age = 30
+print(f'{name} is {age} years old')
+
+# RESOURCES
+# https://pyformat.info/

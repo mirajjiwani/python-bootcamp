@@ -1,0 +1,39 @@
+# DICTIONARIES
+# Key Value Pair - Don't need to know index location
+# Unordered unlike Lists
+
+# Dictionary cannot be sorted/sliced
+
+# {'key1':'value1','key2':'value2'}
+
+mydict = {'Name':'Miraj','Age':30}
+mydict['Name']
+mydict['Miraj']
+
+d = {'k1':123,'k2':[0,1,2],'k3':{'insideKey':100}}
+d['k2']
+
+# Get Value of Key from Dictionary (Nested)
+d['k3']['insideKey']
+
+d = {'key1':['a','b','c']}
+d
+
+letter = mylist[2]
+letter
+
+# Stack calls into one line of code - Dictionary, Index, Upper Method
+d['key1'][2].upper() 
+
+# Mutable
+# Adding item to existing dictionary
+
+d['k3'] = 300
+d
+
+# Replace existing value in dictionary for a Key
+d['key1'] = 10
+
+d.keys() # All Keys in Dictionary
+d.values() # All Values in Dictionary
+d.items() # Key and Value Pairs

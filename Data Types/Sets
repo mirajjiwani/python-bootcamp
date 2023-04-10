@@ -1,0 +1,26 @@
+# Sets
+# Unordered collections of unique elements
+# Unique - Only 1 instance of object
+
+# Output Format - {1,2,3}
+
+myset = set()
+myset
+
+# Add to set (not append like List)
+myset.add(1)
+myset # Output in {} like dict but no key value pair
+
+myset.add(2)
+myset
+
+myset.add(2) # cannot readd 2 as a separte value
+
+# Useful for Casting List to get unique values
+# Only unique values parsed or remove duplicates
+mylist = [1,1,1,2,2,2,3,3,3]
+set(mylist)
+
+set('Mississippi') # Get unique characters from string
+
+set([1,1,2,3])
