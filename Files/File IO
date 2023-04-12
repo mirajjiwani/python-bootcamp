@@ -3,6 +3,9 @@
 # Two Possible Errors
 
 # Must pass file name
+import pwd
+
+
 myfile = open() 
 # Missing directory declaration
 myfile = open('wrong.txt') # Wrong File Path
@@ -17,6 +20,42 @@ myfile.read() # Shows string from file after reset
 contents = myfile.read()
 contents
 
-myfile.readlines() # Grab a list. Each line becomes an item or element in List
+# Grab a list. Each line becomes an item or element in List
+myfile.readlines() 
 
+# Close file after opening and reading. Blocks of code
+myfile.close()
+with open('/Users/mirajsali/Miraj/Develop/Cloud/Python Bootcamp/Files/testfile.txt') as my_new_file:
+    contents = my_new_file.read()
+contents
 
+# READ FILE
+# Cannot read file if mode is set to 'w' for "write". If 'r' for read, it will open.
+with open('/Users/mirajsali/Miraj/Develop/Cloud/Python Bootcamp/Files/testfile.txt',mode='w+') as myfile:
+    contents = myfile.read()
+contents
+
+# READ AN EXISTING FILE
+with open('/Users/mirajsali/Miraj/Develop/Cloud/Python Bootcamp/Files/mynewfile.txt',mode='r') as f:
+   print(f.read())
+
+# ADD NEW LINE TO FILE
+with open('/Users/mirajsali/Miraj/Develop/Cloud/Python Bootcamp/Files/mynewfile.txt',mode='a') as f:
+  f.write('\nFOUR ON FOURTH') # Write a line to existing file
+  
+# WRITE TO A NEW FILE. CREATE NEW FILE
+# Mode has to be 'w' to write or create new file.
+with open('/Users/mirajsali/Miraj/Develop/Cloud/Python Bootcamp/Files/createdfile.txt',mode='w') as f:
+    f.write('I created this file with python')
+
+# Read new file created in line 47
+with open('/Users/mirajsali/Miraj/Develop/Cloud/Python Bootcamp/Files/createdfile.txt',mode='r') as f:
+    f.read()
+    
+
+# File Modes:
+# 'r' - Read Only
+# 'w' - Write Only (Overwrites existing files; Creates new if doesn't exist)
+# 'a' - Append Only (Add to files)
+# 'r+' - Read and Write
+# 'w+' - Write and read (overwrites existing or creates new)

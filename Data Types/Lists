@@ -1,0 +1,49 @@
+# LISTS
+# Ordered Sequences in [] Brackets
+# Mutable
+
+mylist = [1,2,3] # List of integers
+mylist = ['fox',1,30.2] # List of mixed types
+
+# Length of List
+len(mylist)
+
+# Indexing & Slicing
+mylist[1:]
+mylist
+newlist = ['Tom','Jerry']
+mylist + newlist
+savedlist = mylist + newlist
+savedlist
+
+# Change order or strings
+
+# Replace string at a specific index in list
+savedlist[0] = "ONE ALL CAPS"
+savedlist
+
+# Add item to existing list - APPEND
+savedlist.append(6)
+savedlist
+
+# Remove item from list - POP
+savedlist.pop()
+removeditem = savedlist.pop()
+removeditem
+
+# Sort
+strlist = ['a','z','r','f']
+numlist = [1,5,0,4]
+
+strlist.sort()
+sort_strlist = strlist
+sort_strlist
+
+numlist.sort()
+sort_numlist = numlist
+sort_numlist
+
+# Reverse Sort
+numlist.reverse()
+rev_numlist = numlist
+rev_numlist

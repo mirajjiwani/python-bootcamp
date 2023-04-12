@@ -25,6 +25,7 @@ len('hello world')
 # Character  H E L L O
 # Index      0 1 2 3 4
 # Rev. Index 0 -4 -3 -2 -1 (find last character)
+# Rev. Index can also be read as regular index = 1 or -4 (2nd character as example)
 
 mystring = "Hello World"
 mystring
@@ -36,6 +37,8 @@ mystring[-1] # Last character of string
 
 # SLICING
 # [start:stop:step]
+# start = inclusive - Start slice include from this index
+# stop = exclusive - Stop slice before this index
 # Default Step Size (interval) is 1
 
 mystring = 'abcdefghijk'

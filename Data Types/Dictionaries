@@ -19,7 +19,7 @@ d['k3']['insideKey']
 d = {'key1':['a','b','c']}
 d
 
-letter = mylist[2]
+letter = dict[2]
 letter
 
 # Stack calls into one line of code - Dictionary, Index, Upper Method
