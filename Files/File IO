@@ -1,14 +1,22 @@
 # Working with Files
-
 # Open a file
-
 # Two Possible Errors
-import pwd
 
-
-myfile = open() # Must pass file name
-
+# Must pass file name
+myfile = open() 
 # Missing directory declaration
 myfile = open('wrong.txt') # Wrong File Path
-myfile = open('myfile.txt')
-pwd
+
+# Open = Set variable to the file text
+myfile = open('/Users/mirajsali/Miraj/Develop/Cloud/Python Bootcamp/Files/testfile.txt')  # Pass full file path if needed
+myfile.read() # Read file that was opened - Rerunning this will come up blank. Cursor moves to end after being run.
+
+myfile.seek(0) # Reset Cursor to beginning of file
+myfile.read() # Shows string from file after reset
+
+contents = myfile.read()
+contents
+
+myfile.readlines() # Grab a list. Each line becomes an item or element in List
+
+
