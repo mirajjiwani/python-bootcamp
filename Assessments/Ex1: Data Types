@@ -11,6 +11,7 @@ s[:-2:-1]
 
 l = [0,0,0]
 l = [3-3,0,-1+1]
+l = [0]*3
 l
 
 # Reassign "hello" to "goodbye"
@@ -25,7 +26,7 @@ list2
 
 list4 = [5,3,4,6,1]
 list4.sort()
-list4
+sorted(list4)
 
 # Grab 'hello' from dictionary
 

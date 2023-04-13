@@ -1,6 +1,8 @@
 # Basic Number Operators
 
 #Addition
+
+
 1+1
 
 # Division
@@ -12,6 +14,11 @@
 
 # Exponent 2^3
 2**3
+2**2
+
+# Square Root
+from cmath import sqrt
+sqrt(4)
 
 # Order of Operations
 (2+10)*(10+3)
