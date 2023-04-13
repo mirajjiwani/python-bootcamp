@@ -1,0 +1,51 @@
+# WHILE
+
+# Continue block of code remains true
+# e.g. Fill my pool as long as pool is not full
+
+# FORMAT
+# while some_bool_condition:
+    # do something
+# else:
+    # do something else
+
+x = 0
+while x < 5:
+    print(f'Current value of x is {x}')
+    # x = x + 1
+    
+    x +=1
+    
+# 3 Statements
+
+# Break - breaks out of current enclosing loop
+# Continue - Goes to top of closest enclosing loop
+# Pass - does nothing at all
+
+x = [1,2,3]
+
+for item in x:
+    pass # placeholder to continue without syntax errors
+
+mystring = "Miraj"
+
+# Continue loop or skip
+for letter in mystring:
+    if letter == 'a':
+        continue    
+    print(letter)
+
+# Don't continue loop
+for letter in mystring:
+    if letter == 'a':
+        break    
+    print(letter)
+    
+#
+x = 0
+
+while x < 5:
+    if x == 2:
+        break # breaks once loop x == 2
+    print(x)
+    x += 1

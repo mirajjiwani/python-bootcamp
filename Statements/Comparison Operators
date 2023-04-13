@@ -1,0 +1,23 @@
+# Comparison Operators
+
+# == (Equal to)
+2 == 2 # Should be true
+2 == 1 # Should be false
+
+# Case sensitive for String
+'hello' == 'bye' # String - false
+
+# != - Not Equal
+3 != 2 # True
+
+# > - Greater Than
+3 > 2 # True
+
+# < - Less Than
+2 < 3 # True
+
+# >= - Greater Than or Equal To
+2 >= 2 # True
+
+# <= - Lesser Than or Equal To
+2 <= 1 # False

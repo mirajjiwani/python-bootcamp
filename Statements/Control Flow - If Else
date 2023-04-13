@@ -1,0 +1,37 @@
+# Control Flow
+
+# If, Elif (Else If), Else
+
+# Python uses white space (indentation)
+   
+# if(some_condition)
+    # execute code
+# elif(another_condition)
+    # do something else
+# else
+    # do something else
+    
+if True:
+    print('ITS TRUE')
+    
+hungry = True
+if hungry:
+    print('Feed me')
+else:
+    print('Still waiting')
+    
+loc = 'Bank'
+if loc == 'Autoshop':
+    print('Cool cars')
+elif loc == 'Bank':
+    print('$Cha ching$')
+else:
+    print("Don't know")
+
+name = 'Tom'
+if name == 'Miraj':
+    print('Hello Miraj!')
+elif name == 'Sammy':
+    print('Hello Sammy!')
+else:
+    print('Halt! Who goes there?')

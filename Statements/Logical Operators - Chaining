@@ -1,0 +1,20 @@
+# Logical Operators
+
+# and, or, not
+
+# Combined Operators
+
+# AND - Both True
+1 < 2 < 3  # True
+1 < 2 and 2 < 3 # True
+'h' == 'h' and 2 == 2
+('h' == 'h') and (2 == 2)
+
+# OR - Any True
+1 == 1 or 2 == 2 # True
+1 == 100 or 2 == 2 # True
+(1 == 100) or (2 == 200) # False
+
+# NOT - Return Opposite Bool
+not(1 == 1) # False - Opp. of true
+

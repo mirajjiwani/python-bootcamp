@@ -1,0 +1,58 @@
+# For Loops
+# Iterating Over Object
+
+# String characters, list items, dictionary keys
+
+mylist = [1,2,3,4,5,6,7,8,9,10]
+
+# Format
+# for iterable in object
+
+for num in mylist:
+    print(num)
+
+for num in mylist:
+    print('hello')
+    
+for num in mylist:
+    # Check for even
+    if num % 2 == 0:
+        print(num)
+    else:
+        print(f'I have:{num}')
+        
+# Show final sum
+list_sum = 0
+
+for num in mylist:
+    list_sum = list_sum + num
+    print(list_sum) # Inside - Shows each addition
+    
+print(list_sum) # Outside for loop, shows total
+
+# String
+phrase = 'Hello World'
+for letter in phrase:
+    print(phrase)
+    
+# Tuple
+tup = (1,2,3)
+for item in tup:
+    print(item)
+    
+# List + Tuple
+# Print specific items in tuples - reorganize
+
+tuplist = [(1,2),(3,4),(5,6),(7,8)]
+len(tuplist)
+
+for a,b in tuplist:
+    print(b)
+    
+# Dictionaries
+# Unordered
+
+d = {'k1':1,'k2':2,'k3':3}
+
+for key,value in d.items():
+    print(value)
